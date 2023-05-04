@@ -1,0 +1,44 @@
+@import "../mixins/variables.scss";
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 16vh;
+    bottom: 0;
+    background: linear-gradient(113.83deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(5px 5px 30px rgba(30, 30, 30, 0.1));
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10vw;
+    height: 16vh;
+    background: linear-gradient(113.83deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(5px 5px 30px rgba(30, 30, 30, 0.05));
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+
+    &__time {
+        font-weight: $--weight-regular;
+        font-size: $--font-medium;
+        color: $--1--white;
+    }
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    &__temperature {
+        font-weight: $--weight-regular;
+        font-size: $--font-xl;
+        color: $--1--white;
+    }
+}

@@ -1,18 +1,30 @@
+@import "../mixins/variables.scss";
+
 .search {
-    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
     height: 70px;
     border-radius: 50px;
     background: linear-gradient(113.83deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     filter: drop-shadow(5px 5px 30px rgba(30, 30, 30, 0.1));
     backdrop-filter: blur(25px);
-}
 
-.input {
-    width: 45vw;
-    height: inherit;
-    background-color: transparent;
-    border: none;
-    padding: 0;
+    &__input {
+        width: 30vw;
+        height: inherit;
+        background-color: transparent;
+        border: none;
+        font-family: "Barlow" sans-serif;
+        font-size: $--font-medium;
+        color: $--1--white;
+        padding: 0 0 0 20px;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
 
     &__button {
         display: flex;
@@ -22,9 +34,6 @@
         height: 56px;
         background-color: transparent;
         border: none;
+        padding: 0 7px 0 0;
     }
-}
-
-.input:focus {
-    outline: none;
 }

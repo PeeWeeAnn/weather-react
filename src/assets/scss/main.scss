@@ -1,4 +1,8 @@
+@import "../mixins/variables.scss";
+
 body {
+    font-family: "Barlow", sans-serif;
+    font-weight: $--weight-regular;
     height: 100vh;
     display: flex;
     justify-content: center;

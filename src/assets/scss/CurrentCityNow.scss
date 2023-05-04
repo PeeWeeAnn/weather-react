@@ -1,0 +1,45 @@
+@import "../mixins/variables.scss";
+
+.city-now {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0 0 30px;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        font-weight: $--weight-medium;
+        font-size: $--font-xxl;
+        color: $--1--white;
+    }
+
+    &__location {
+        font-weight: $--weight-light;
+        font-size: $--font-medium;
+        color: $--1--white;
+    }
+}
+
+.weather-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 152px;
+    height: 84px;
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__temperature {
+        font-weight: $--weight-regular;
+        font-size: $--font-xxl;
+        color: $--1--white;
+    }
+}
