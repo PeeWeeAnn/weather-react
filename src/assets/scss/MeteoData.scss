@@ -1,0 +1,10 @@
+@import "../mixins/variables.scss";
+
+.meteo-data {
+    width: 40vw;
+    height: 35vh;
+    background: url(.png), linear-gradient(113.83deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(5px 5px 30px rgba(30, 30, 30, 0.1));
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+}

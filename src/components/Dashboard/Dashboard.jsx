@@ -7,7 +7,9 @@ const Dashboard = () => {
     return (
         <div className="container__dashboard dashboard">
             <CurrentCityNow />
-            <CurrentCityForecast />
+            <div className="dashboard__forecast forecast">
+                 <CurrentCityForecast />
+            </div>
         </div>
     )
 }

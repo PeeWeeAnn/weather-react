@@ -8,9 +8,11 @@ const Container = () => {
     return (
         <div className="container">
             <SearchBar />
-            <Dashboard />
-            <MeteoData />
-            <OtherCities />
+            <Dashboard />    
+            <div className="container__other-data">
+                <MeteoData />
+                <OtherCities />
+            </div>
         </div>
     )
 }
